@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+    />
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      #sortable {
+        list-style-type: none;
+        width: 412px;
+        height: 385px;
+        display: block;
+
+        padding: 0%;
+      }
+      #sortable li {
+        margin: 3px 3px 3px 0;
+        padding: 1px;
+        float: left;
+        width: 100px;
+        height: 90px;
+        font-size: 4em;
+        text-align: center;
+      }
+     
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1 class="text-center mb-5 mt-4">Arrange Them</h1>
+      <ol id="sortable" class="container">
+        <li class="ui-state-default">
+          <i class="ri-home-2-fill" style="color: rgb(170, 0, 204)"></i>
+        </li>
+        <li class="ui-state-default">
+          <i class="ri-flag-2-line" style="color: rgb(1, 163, 36)"></i>
+        </li>
+
+        <li class="ui-state-default"><i class="ri-star-s-fill"></i></li>
+        <li class="ui-state-default">
+          <i class="ri-cloud-fill" style="color: aqua"></i>
+        </li>
+
+        <li class="ui-state-default">
+          <i class="ri-sparkling-fill" style="color: rgb(255, 57, 57)"></i>
+        </li>
+        <li class="ui-state-default">
+          <i class="ri-verified-badge-fill" style="color: rgb(0, 4, 218)"></i>
+        </li>
+
+        <li class="ui-state-default">
+          <i class="ri-cloud-fill" style="color: aqua"></i>
+        </li>
+        <li class="ui-state-default">
+          <i class="ri-megaphone-fill" style="color: rgb(233, 217, 0)"></i>
+        </li>
+        <li class="ui-state-default">
+          <i class="ri-bubble-chart-fill" style="color: rgb(204, 116, 0)"></i>
+        </li>
+
+        <li class="ui-state-default">
+          <i class="ri-flag-2-line" style="color: rgb(1, 163, 36)"></i>
+        </li>
+
+        <li class="ui-state-default">
+          <i class="ri-megaphone-fill" style="color: rgb(235, 219, 0)"></i>
+        </li>
+        <li class="ui-state-default">
+          <i class="ri-home-2-fill" style="color: rgb(170, 0, 204)"></i>
+        </li>
+
+        <li class="ui-state-default">
+          <i class="ri-verified-badge-fill" style="color: rgb(0, 4, 218)"></i>
+        </li>
+        <li class="ui-state-default">
+          <i class="ri-sparkling-fill" style="color: rgb(255, 57, 57)"></i>
+        </li>
+        <li class="ui-state-default">
+          <i class="ri-bubble-chart-fill" style="color: rgb(204, 116, 0)"></i>
+        </li>
+        <li class="ui-state-default"><i class="ri-star-s-fill"></i></li>
+      </ol>
+      <button class="btn btn-info" id="btn1" style="position:relative; left: 48%;top: 20px;">Next level</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#sortable").sortable();
+        $("#sortable").disableSelection();
+      });
+
+
+      // sweet alert function
+      document.getElementById('btn1').addEventListener('click', function () {
+      Swal.fire({
+        title: 'Coming soon',
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, minima?',
+        icon: 'success', 
+        confirmButtonText: 'OK'
+      });
+    });
+    </script>
+  </body>
+</html>
