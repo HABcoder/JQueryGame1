@@ -1,1 +1,1 @@
-Basic Game created by jquery
+Basic Game created by jquery (arrange them)
